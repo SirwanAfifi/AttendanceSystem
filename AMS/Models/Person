@@ -15,7 +15,7 @@ namespace StudentAttendance.Models
         [Required(ErrorMessage = "Please Enter the Family")]
         public string Family { get; set; }
         [Required(ErrorMessage = "Please Enter the DateOfBirth")]
-        public DateTime DateOfBirth { get; set; }
+        public DateTime Age { get; set; }
         [Required(ErrorMessage = "Please Enter the Email")]
         [DataType(System.ComponentModel.DataAnnotations.DataType.EmailAddress)]
         public string Email { get; set; }
