@@ -6,9 +6,9 @@ using System.Web;
 
 namespace AMS.Models
 {
-    public class Course : Entity
+    public class Course : Person
     {
-        public string Name { get; set; }
+        public string CourseName { get; set; }
 
         public ICollection<Student> Students { get; set; }
         public ICollection<Teacher> Teachers { get; set; }
