@@ -5,11 +5,8 @@ using System.Web;
 
 namespace AMS.Models
 {
-    public class Teacher : Entity
+    public class Teacher : Person
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public DateTime DateOfBirth { get; set; }
         public int CourseId { get; set; }
         public virtual Course Courses { get; set; }
     }

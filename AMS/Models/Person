@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Web;
+
+namespace StudentAttendance.Models
+{
+    public class Person
+    {
+        [Required]
+        public int Id { get; set; }
+        [Required(ErrorMessage="Please Enter the Name")]
+        public string Name { get; set; }
+        [Required(ErrorMessage = "Please Enter the Family")]
+        public string Family { get; set; }
+        [Required(ErrorMessage = "Please Enter the DateOfBirth")]
+        public DateTime Age { get; set; }
+        [Required(ErrorMessage = "Please Enter the Email")]
+        [DataType(System.ComponentModel.DataAnnotations.DataType.EmailAddress)]
+        public string Email { get; set; }
+    }
+}
